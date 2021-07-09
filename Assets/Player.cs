@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
         {
             float y = jumpYac.Evaluate(sumEvaluateTime);
             y *= jumplYMultiply;
+            transform.Translate(0, y, 0);
             yield return null;
             sumEvaluateTime += Time.deltaTime;
 
